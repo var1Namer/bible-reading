@@ -500,12 +500,81 @@ const SessionView = {
   }
 };
 
+// ── LOGIN VIEW ────────────────────────────────────────────────
+
+const LoginView = {
+  render(msg = '') {
+    document.getElementById('app').innerHTML = `
+      <div class="login-wrap">
+        <div class="login-card">
+          <h1 class="login-title">Bible Reading</h1>
+          <p class="login-sub">Sign in to sync your sessions across devices.</p>
+          ${msg ? `<div class="login-error">${msg}</div>` : ''}
+          <input id="l-email"    type="email"    placeholder="Email"    class="login-input">
+          <input id="l-password" type="password" placeholder="Password" class="login-input">
+          <button class="login-btn" id="btn-signin">Sign in</button>
+          <button class="login-btn login-btn-sec" id="btn-signup">Create account</button>
+        </div>
+      </div>
+    `;
+    document.getElementById('btn-signin').addEventListener('click', () => this._attempt('signin'));
+    document.getElementById('btn-signup').addEventListener('click', () => this._attempt('signup'));
+    document.getElementById('l-password').addEventListener('keydown', e => {
+      if (e.key === 'Enter') this._attempt('signin');
+    });
+  },
+
+  async _attempt(action) {
+    const email    = document.getElementById('l-email').value.trim();
+    const password = document.getElementById('l-password').value;
+    if (!email || !password) { this.render('Please enter email and password.'); return; }
+    try {
+      if (action === 'signup') {
+        await Auth.signUp(email, password);
+        this.render('Account created — check your email to confirm, then sign in.');
+      } else {
+        await Auth.signIn(email, password);
+        // onAuthChange will fire and route to home
+      }
+    } catch (err) {
+      this.render(err.message || 'Something went wrong.');
+    }
+  }
+};
+
+// ── ROUTER UPDATE ─────────────────────────────────────────────
+
+const _routerGo = Router.go.bind(Router);
+Router.go = function(view, params = {}) {
+  if (view === 'login') { LoginView.render(); return; }
+  _routerGo(view, params);
+};
+
 // ── BOOT ──────────────────────────────────────────────────────
 
-// Register service worker for offline support
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(console.error);
 }
 
-// Start app
-Router.go('home');
+// Listen for auth changes — this fires on page load too
+Auth.onAuthChange(user => {
+  if (user) {
+    Router.go('home');
+  } else {
+    Router.go('login');
+  }
+});
+
+// Add sign out button to home header once rendered
+const _homeRender = HomeView.render.bind(HomeView);
+HomeView.render = async function() {
+  await _homeRender();
+  const header = document.querySelector('.home-header');
+  if (header) {
+    const btn = document.createElement('button');
+    btn.className = 'btn-signout';
+    btn.textContent = 'Sign out';
+    btn.addEventListener('click', async () => { await Auth.signOut(); });
+    header.appendChild(btn);
+  }
+};

@@ -419,3 +419,89 @@ button { font-family: inherit; cursor: pointer; }
   .card-body   { padding: 18px 24px; gap: 16px; }
   .card-edit-ctrl { padding: 12px 24px 16px; }
 }
+
+/* ── LOGIN VIEW ─────────────────────────────────────────────── */
+
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg);
+}
+.login-card {
+  background: var(--page);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.login-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+}
+.login-sub {
+  font-size: 13px;
+  color: var(--faint);
+  text-align: center;
+  line-height: 1.5;
+}
+.login-error {
+  background: var(--red-l);
+  color: var(--red);
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.login-input {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 10px 13px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  background: white;
+}
+.login-input:focus { border-color: var(--green); box-shadow: 0 0 0 2px var(--green-l); }
+.login-btn {
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 11px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login-btn:active { background: var(--green-d); }
+.login-btn-sec {
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--soft);
+  font-weight: 400;
+}
+.login-btn-sec:active { background: var(--warm); }
+
+/* Sign out button in home header */
+.btn-signout {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #a09888;
+  border-radius: 5px;
+  padding: 5px 11px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn-signout:hover { color: var(--page); border-color: rgba(255,255,255,0.4); }
