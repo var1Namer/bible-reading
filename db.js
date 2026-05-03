@@ -4,7 +4,7 @@
 // To swap backends, only this file needs to change.
 
 const SUPABASE_URL = 'https://nzwqnvhmjerdnixkuqob.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_rUj0Z8u7b-UIKupMagq7og_Wzcwk6Bq0aKToHIZJYFX_xhJPYgbqfDVE0K6C8HuDfA';
+const SUPABASE_KEY = 'sb_publishable_rUj0Z8u7b-UIKupMagq7og_Wzcwk6jj';
 
 const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
