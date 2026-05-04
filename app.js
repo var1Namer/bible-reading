@@ -55,18 +55,18 @@ const Template = {
       {
         id: Utils.uid(), title: 'Before Reading', ref: 'Para. 5, 13', hint: '',
         items: [
-          { id: Utils.uid(), type: 'check', label: 'Pray for concentration and holy spirit before you begin.', checked: false },
-          { id: Utils.uid(), type: 'field', question: 'Am I approaching this sincerely and teachably, without a critical or proud spirit?', answer: '', size: 'short' }
+          { id: Utils.uid(), type: 'check', label: 'Pray for concentration and holy spirit before you begin (Mangabay kay Jehova nga hatagan ka sang balaan nga espiritu antes ka magsugod).', checked: false },
+          { id: Utils.uid(), type: 'field', question: 'Am I approaching this sincerely and teachably, without a critical or proud spirit?(Gina-approach ko bala ini nga wala sang pagka-bugalon nga kinaiya kag may para lamang ngitaan sang sala ang iban?)', answer: '', size: 'short' }
         ]
       },
       {
         id: Utils.uid(), title: 'Comprehension', ref: 'Para. 5–6',
-        hint: 'Read slowly. Read aloud or use audio if it helps.',
+        hint: 'Read slowly. Read aloud or use audio if it helps.(Basaha sing mahinay, matunog, ukon gamita ang audio recording kung kinahanglan.)',
         items: [
-          { id: Utils.uid(), type: 'field', question: 'Who are the main characters? Who is speaking and to whom?', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: 'What is happening, and why?', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: 'Where and when is this taking place?', answer: '', size: 'short' },
-          { id: Utils.uid(), type: 'field', question: 'What is the main idea in one sentence?', answer: '', size: 'short' },
+          { id: Utils.uid(), type: 'field', question: 'Who are the main characters? Who is speaking and to whom? (Sin-o ang mga main karakter? Sin-o ang gahambal kag sin-o ang iya kaistorya?)', answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: 'What is happening, and why? (Ano ang gakalatabo kag ngaa?)', answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: 'Where and when is this taking place? (Diin kag san-o ini gakatabo?)', answer: '', size: 'short' },
+          { id: Utils.uid(), type: 'field', question: 'What is the main idea in one sentence? ()', answer: '', size: 'short' },
           { id: Utils.uid(), type: 'field', question: 'Notes — questions, insights, feelings, things to research', answer: '', size: 'tall' }
         ]
       },
@@ -82,10 +82,10 @@ const Template = {
         id: Utils.uid(), title: 'Four Filters', ref: 'Para. 10–11 · 2 Tim. 3:16–17',
         hint: 'Run every passage through all four of these.',
         items: [
-          { id: Utils.uid(), type: 'field', question: '1 · Teach — What does this teach me about Jehovah or his purpose?', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: '2 · Reprove — What wrong tendency or attitude in me does this identify?', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: '3 · Correct — What wrong viewpoint does this set straight?', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: '4 · Discipline — What training does this give me to reflect Jehovah\'s thinking?', answer: '', size: 'normal' }
+          { id: Utils.uid(), type: 'field', question: '1 · Teach — What does this teach me about Jehovah or his purpose?' (Ano ang ginatudlo sini sa imo parte kay Jehova, parte sa iya katuyuan, ukon parte sa iya mga prinisipio?), answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: '2 · Reprove — What wrong tendency or attitude in me does this identify? (Talupangda kon paano ka ginabuligan sang mga bersikulo nga imo ginabasa nga mabal-an ang imo indi husto nga handum ukon pamatasan kag kon paano mo ini madula, kag kon paano ka padayon nga mangin matutom kay Jehova.)', answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: '3 · Correct — What wrong viewpoint does this set straight? (Hibalua kon paano ini makabulig sa imo nga matadlong ang sala nga pagpati nga posible nasambit sang imo ginbantalaan.)', answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: '4 · Discipline — What training does this give me to reflect Jehovah\'s thinking? (Hibalua kon paano ka ginadisiplina sang mga bersikulo nga imo ginabasa para mailog mo ang panghunahuna ni Jehova.)', answer: '', size: 'normal' }
         ]
       },
       {
