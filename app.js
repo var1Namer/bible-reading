@@ -56,12 +56,12 @@ const Template = {
         id: Utils.uid(), title: 'Before Reading', ref: 'Para. 5, 13', hint: '',
         items: [
           { id: Utils.uid(), type: 'check', label: 'Pray for concentration and holy spirit before you begin. (Mangabay kay Jehova nga hatagan ka sang balaan nga espiritu antes ka magsugod.)', checked: false },
-          { id: Utils.uid(), type: 'field', question: 'Am I approaching this sincerely and teachably, without a critical or proud spirit? (Gina-approach ko bala ini nga wala sang pagka-bugalon nga kinaiya kag may para lamang ngitaan sang sala ang iban?)', answer: '', size: 'short' }
+          { id: Utils.uid(), type: 'field', question: 'Am I approaching this sincerely and teachably, without a critical or proud spirit? (Gina-approach ko bala ini nga wala sang pagka-bugalon nga kinaiya kag para lamang ngitaan sang sala ang iban?)', answer: '', size: 'short' }
         ]
       },
       {
         id: Utils.uid(), title: 'Comprehension', ref: 'Para. 5–6',
-        hint: 'Read slowly. Read aloud or use audio if it helps. (Basaha sing mahinay, matunog, ukon gamita ang audio recording kung kinahanglan.)',
+        hint: 'Read slowly. Read aloud or use audio if it helps. (Basaha sing mahinay(slowly,) matunog(loud), ukon gamita ang audio recording kung kinahanglan.)',
         items: [
           { id: Utils.uid(), type: 'field', question: 'Who are the main characters? Who is speaking and to whom? (Sin-o ang mga main karakter? Sin-o ang gahambal kag sin-o ang iya kaistorya?)', answer: '', size: 'normal' },
           { id: Utils.uid(), type: 'field', question: 'What is happening, and why? (Ano ang gakalatabo kag ngaa?)', answer: '', size: 'normal' },
@@ -72,10 +72,10 @@ const Template = {
       },
       {
         id: Utils.uid(), title: 'Discernment', ref: 'Para. 7–8',
-        hint: 'Carefully analyze what you read. Note how it connects to other things you know. (Analisahon sing maayo ang imo ginbasa. Talupangda kon paano ini nakakonekta sa iban nga butang nga imo nahibal-an.)',
+        hint: 'Carefully analyze what you read. Note how it connects to other things you know. (Analisaha sing maayo ang imo ginbasa. Talupangda kon paano ini nakakonekta sa iban nga butang nga imo nahibal-an.)',
         items: [
           { id: Utils.uid(), type: 'field', question: 'How does this passage connect to something else I already know in the Bible? (Paano nakakonekta ang passage nga ini sa iban nga butang nga nahibal-an ko na sa Biblia?)', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: 'What is not immediately obvious here that I had to think about? (Ano ang wala gilayon maklaro sa akon nga kinahanglan ko pa nga hunahunaan?)', answer: '', size: 'normal' }
+          { id: Utils.uid(), type: 'field', question: 'What is not immediately obvious here that I had to think about? (Ano ang wala gilayon maklaro sa akon nga kinahanglan ko pa nga hunahunaonn?)', answer: '', size: 'normal' }
         ]
       },
       {
@@ -90,11 +90,11 @@ const Template = {
       },
       {
         id: Utils.uid(), title: 'After Reading', ref: 'Para. 5, 14',
-        hint: 'Self-examination — does your reading show in how you treat others? (Pagsusi sa imo kaugalingon — nakita bala sa paagi sang imo pagtrato sa iban ang imo nabasa?)',
+        hint: 'Self-examination — does your reading show in how you treat others? (Pagusisa sa imo kaugalingon — makita bala sa paagi sang imo pagtrato sa iban ang imo nabasa?)',
         items: [
-          { id: Utils.uid(), type: 'check', label: 'Pray to thank Jehovah for his Word and ask for help to apply what you read. (Mangabay para magpasalamat kay Jehova para sa iya Pulong kag mangayo sang bulig para maaplikar ang imo nabasa.)', checked: false },
-          { id: Utils.uid(), type: 'field', question: 'Am I inclined to see good in others, or quick to point out their flaws? (Naluyag bala ako nga makita ang maayo sa iban, ukon madali ko silang sentensyahan?)', answer: '', size: 'normal' },
-          { id: Utils.uid(), type: 'field', question: 'Am I merciful and forgiving, or critical and holding grudges? (Maluluy-on kag mapatawadon bala ako, ukon kritikal kag may tanim nga kapungot?)', answer: '', size: 'normal' }
+          { id: Utils.uid(), type: 'check', label: 'Pray to thank Jehovah for his Word and ask for help to apply what you read. (Mangamuyo para magpasalamat kay Jehova para sa iya Pulong kag mangayo sang bulig para maaplikar ang imo nabasa.)', checked: false },
+          { id: Utils.uid(), type: 'field', question: 'Am I inclined to see good in others, or quick to point out their flaws? (Naluyag bala ako nga makita ang maayo sa iban, ukon madali ko sila nga sentensyahan sa akon hunahuna bahin sa ila mga kakulangan?)', answer: '', size: 'normal' },
+          { id: Utils.uid(), type: 'field', question: 'Am I merciful and forgiving, or critical and holding grudges? (Maluluy-on kag mapinatawaron bala ako, ukon kritikal kag may ginatanom nga dumot?)', answer: '', size: 'normal' }
         ]
       }
     ];
