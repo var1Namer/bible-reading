@@ -1,5 +1,8 @@
 # Bible Reading App
 
+NOTE TO MYSELF VAR1: ANYTHING YOU WRITE WILL BE IN CAPSLOCK, EVERYTHING ELSE AUTOMATICALLY
+MEANS IT WAS WRITTEN BY CLAUDE SONNET 4.6
+
 A PWA (Progressive Web App) for your Bible reading sessions.
 Works on Android and desktop. Fully offline after first load.
 
