@@ -1,7 +1,7 @@
 // sw.js — Service Worker
 // Bump CACHE_NAME when you update any app files so users get fresh content.
 
-const CACHE_NAME = 'brw-v2';
+const CACHE_NAME = 'brw-v3';
 const ASSETS = [
   './index.html',
   './style.css',
